@@ -71,7 +71,7 @@ export default function HeaderForm() {
           <div className="flex flex-col items-center justify-between xl:flex-row">
    <div className="mb-12 w-full max-w-xl xl:mb-0 xl:w-7/12 xl:pr-16">
   <h2
-    className="mb-6 max-w-lg font-formal text-3xl font-bold tracking-tight text-white sm:text-7xl sm:leading-none mt-5 md:mt-0 animate-fade-in"
+    className="mb-6 max-w-lg uppercase font-formal text-3xl font-bold tracking-tight text-white sm:text-7xl sm:leading-none mt-5 md:mt-0 animate-fade-in"
     style={{
       color: "#ffffff",
       textShadow:

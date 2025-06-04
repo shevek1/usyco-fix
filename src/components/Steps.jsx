@@ -17,76 +17,75 @@ import "swiper/css/navigation";
 
 const reviews = [
   {
-    name: "Facundo Pereyra",
+    name: "Lucía Fernández",
     image:
-      "https://images.pexels.com/photos/832998/pexels-photo-832998.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://randomuser.me/api/portraits/women/54.jpg",
     icon: <ShieldCheck size={20} color="#6b4a5f" />,
     stars: 5,
-    title: "Fraude bancario con tarjeta",
+    title: "Cambio de vuelo",
     text:
-      "Carlos apareció en Veraz por una deuda con tarjeta que nunca pidió. El banco emitió el plástico sin permiso y otro lo usó sin su conocimiento. Presentamos reclamos y acciones legales para defenderlo y limpiar su historial.",
+      "Lucía compró su pasaje con meses de anticipación para un congreso profesional. Sin aviso previo, la aerolínea cambió unilateralmente la fecha del vuelo, impidiéndole llegar a tiempo. Se enteró del cambio solo al intentar hacer el check-in online.",
     resultPoints: [
-      "Que se anule la deuda ilegítima.",
-      "Que el banco emita libre deuda.",
-      "Que se ordene la baja inmediata en Veraz.",
-      "Que se le otorgue una reparación económica.",
+      "Reclamo formal basado en la Ley 24.240 y las normativas de la ANAC.",
+      "Que se restituya el importe total del pasaje.",
+      "Que se otorgue compensación por gastos y daños.",
     ],
     finalResult:
-      "Carlos recuperó la tranquilidad y recibió una compensación económica.",
+      "Lucía fue indemnizada y la empresa reconoció su responsabilidad.",
   },
-    {
-    name: "Susana Martinez",
-    image:
-      "https://images.pexels.com/photos/832998/pexels-photo-832998.jpeg?auto=compress&cs=tinysrgb&w=600",
-    icon: <ShieldCheck size={20} color="#6b4a5f" />,
-    stars: 5,
-    title: "Fraude bancario con tarjeta",
-    text:
-      "Lucía compró su pasaje con anticipación pero la aerolínea cambió la fecha sin aviso. No pudo hacer check-in y perdió el viaje. Presentamos reclamos y gestiones para exigir sus derechos y la devolución del dinero.",
-    resultPoints: [
-      "La restitución total del importe del pasaje.",
-      "Una compensación por gastos y daños ocasionados.",
-       "Una compensación por gastos y daños ocasionados.",
-    ],
-    finalResult:
-      "Lucía fue indemnizada y la empresa aceptó su responsabilidad. Este caso ayuda a proteger a quienes sufren cambios arbitrarios sin aviso.",
-  },
-    {
-    name: "Facundo Pereyra",
-    image:
-      "https://images.pexels.com/photos/832998/pexels-photo-832998.jpeg?auto=compress&cs=tinysrgb&w=600",
-    icon: <ShieldCheck size={20} color="#6b4a5f" />,
-    stars: 5,
-    title: "Fraude bancario con tarjeta",
-    text:
-      "Facundo fue reportado en Veraz por una deuda generada con una tarjeta de crédito que jamás pidió. El banco la activó sin autorización y un tercero la utilizó sin su conocimiento.",
-    resultPoints: [
-      "Que se anule la deuda ilegítima.",
-      "Que el banco emita libre deuda.",
-      "Que se ordene la baja inmediata en Veraz.",
-      "Que se le otorgue una reparación económica a favor del consumidor.",
-    ],
-    finalResult:
-      "Facundo recuperó su tranquilidad y fue resarcido económicamente. Hoy su historial crediticio está limpio y validado.",
-  },
-    {
-    name: "Facundo Pereyra",
-    image:
-      "https://images.pexels.com/photos/832998/pexels-photo-832998.jpeg?auto=compress&cs=tinysrgb&w=600",
-    icon: <ShieldCheck size={20} color="#6b4a5f" />,
-    stars: 5,
-    title: "Fraude bancario con tarjeta",
-    text:
-      "Facundo fue reportado en Veraz por una deuda generada con una tarjeta de crédito que jamás pidió. El banco la activó sin autorización y un tercero la utilizó sin su conocimiento.",
-    resultPoints: [
-      "Que se anule la deuda ilegítima.",
-      "Que el banco emita libre deuda.",
-      "Que se ordene la baja inmediata en Veraz.",
-      "Que se le otorgue una reparación económica a favor del consumidor.",
-    ],
-    finalResult:
-      "Facundo recuperó su tranquilidad y fue resarcido económicamente. Hoy su historial crediticio está limpio y validado.",
-  },
+  {
+  name: "Carlos Gómez",
+  image:
+    "https://randomuser.me/api/portraits/men/71.jpg",
+  icon: <ShieldCheck size={20} color="#6b4a5f" />,
+  stars: 5,
+  title: "Estafa bancaria y Veraz",
+  text:
+    "Carlos descubrió que estaba en Veraz por una deuda en una tarjeta que no solicitó. El banco emitió la tarjeta sin su autorización y la usaron sin su conocimiento.",
+  resultPoints: [
+    "Reclamo inmediato ante el banco y denuncias al BCRA y Defensoría del Consumidor.",
+    "Emisión de libre deuda por parte del banco.",
+    "Baja inmediata en el registro de Veraz.",
+    "Reparación económica a favor del consumidor.",
+  ],
+  finalResult:
+    "Carlos recuperó su tranquilidad, y además fue resarcido económicamente por el daño que le causaron. ",
+},
+{
+  name: "María López",
+  image:
+    "https://randomuser.me/api/portraits/women/14.jpg",
+  icon: <ShieldCheck size={20} color="#6b4a5f" />,
+  stars: 5,
+  title: "Demora en entrega de producto",
+  text:
+    "María compró un electrodoméstico con entrega garantizada en 10 días, pero la empresa demoró más de 2 meses sin avisar. Esto generó problemas en su hogar por falta del producto.",
+  resultPoints: [
+    "Reclamo formal ante Defensa del Consumidor.",
+    "Reembolso total del importe abonado.",
+    "Compensación por daños y perjuicios.",
+  ],
+  finalResult:
+    "María recibió el reembolso y la empresa ajustó sus tiempos de entrega para futuros clientes.",
+},
+{
+  name: "Jorge Martínez",
+  image:
+    "https://randomuser.me/api/portraits/men/36.jpg",
+  icon: <ShieldCheck size={20} color="#6b4a5f" />,
+  stars: 5,
+  title: "Cobro indebido en tarjeta de crédito",
+  text:
+    "Jorge detectó cargos no autorizados en su tarjeta por compras que no realizó. Contactó al banco y la entidad tardó en resolver la situación.",
+  resultPoints: [
+    "Denuncia ante el banco y la entidad reguladora.",
+    "Anulación de cargos fraudulentos.",
+    "Mejora en los sistemas de seguridad del banco.",
+  ],
+  finalResult:
+    "Jorge recuperó su dinero y el banco reforzó los controles para evitar futuros fraudes.",
+},
+  
 
 ];
 
@@ -164,8 +163,7 @@ export default function HowWeWorkAndReviews() {
   display: flex;
   flex-direction: column;
   height: 100%;
-  
-  min-height: 440px;  /* ✅ Forzá un alto fijo */
+  min-height: 480px;  /* ✅ Forzá un alto fijo */
 }
 
         /* Contenido con scroll si excede */
@@ -286,16 +284,22 @@ export default function HowWeWorkAndReviews() {
         </div>
       </section>
 
-      {/* Reseñas */}
-      <section className="max-w-6xl mx-auto mb-24 relative">
-        <h2 className="text-4xl font-bold text-center text-[#6b4a5f] mb-6">
-          Casos de éxito
-        </h2>
-
-              <div className="w-full flex justify-center">
+               <div className="w-full flex justify-center">
         <div className="h-[2px] w-20 bg-[#6b4a5f] mt-4 mb-16 rounded-full" />
       </div>
 
+
+      {/* Reseñas */}
+      <section className="max-w-6xl mx-auto mb-24 relative">
+        <h2 className="text-4xl font-bold text-center text-[#6b4a5f] mb-3">
+          Casos de éxito
+        </h2>
+          <p className="text-center text-[#6b4a5f] mb-12 max-w-2xl mx-auto text-lg">
+     Compartimos historias reales donde nuestro <span class="underline">asesoramiento profesional y cercano</span> logró proteger derechos y alcanzar soluciones efectivas.
+        </p>
+
+
+     
         {/* Flechas arriba a la derecha, fuera de las cards */}
         <div className="custom-navigation-wrapper">
           <div
@@ -340,6 +344,7 @@ export default function HowWeWorkAndReviews() {
               slidesPerView: 3,
             },
           }}
+          loop={true}   
           navigation={false} // No queremos las flechas nativas, usamos las personalizadas arriba
         >
           {reviews.map((review, idx) => (

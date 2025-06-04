@@ -71,7 +71,7 @@ export default function HeaderForm() {
           <div className="flex flex-col items-center justify-between xl:flex-row">
    <div className="mb-12 w-full max-w-xl xl:mb-0 xl:w-7/12 xl:pr-16">
   <h2
-    className="mb-6 max-w-lg uppercase font-formal text-3xl font-bold tracking-tight text-white sm:text-7xl sm:leading-none mt-5 md:mt-0 animate-fade-in"
+    className="mb-6 max-w-lg camelcase font-formal text-3xl font-bold tracking-tight text-white sm:text-7xl sm:leading-none mt-5 md:mt-0 animate-fade-in"
     style={{
       color: "#ffffff",
       textShadow:
@@ -178,24 +178,18 @@ export default function HeaderForm() {
                     required
                     className="h-12 w-full mb-4 rounded border border-gray-300 bg-white px-4 shadow-sm ring-[#d2a547] focus:border-[#d2a547] focus:outline-none focus:ring"
                   >
-                    <option value="">Selecciona el Asunto</option>
-                    <option value="Estafa bancaria">Estafa bancaria</option>
-                    <option value="Credito no solicitado">
-                      Crédito no solicitado
-                    </option>
-                    <option value="Veraz indebido">Veraz indebido</option>
-                    <option value="Deuda falsa">Deuda falsa</option>
-                    <option value="Tarjeta no solicitada">
-                      Tarjeta no solicitada
-                    </option>
-                    <option value="Aumento cuota">Aumento cuota</option>
-                    <option value="Consulta general">
-                      Consulta general
-                    </option>
-                    <option value="Seguimiento caso">
-                      Seguimiento de un caso
-                    </option>
-                    <option value="Otros">Otros</option>
+<option value="">Selecciona el Asunto</option>
+<option value="estafa">Estafa bancaria</option>
+<option value="credito">Crédito no solicitado</option>
+<option value="veraz">Veraz indebido</option>
+<option value="producto">Producto o servicio fallado</option>
+<option value="prepaga">Cobros indebidos (prepaga)</option>
+<option value="aerolinea">Reclamo a aerolínea</option>
+<option value="contrato">Incumplimiento contractual</option>
+<option value="consulta">Consulta general</option>
+<option value="seguimiento">Seguimiento de caso</option>
+<option value="otros">Otros..</option>
+
                   </select>
 
                   <textarea

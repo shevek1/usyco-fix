@@ -18,8 +18,8 @@ import "swiper/css/navigation";
 const reviews = [
   {
     name: "Lucía Fernández",
-    image:
-      "https://randomuser.me/api/portraits/women/54.jpg",
+    // image:
+    //   "https://randomuser.me/api/portraits/women/54.jpg",
     icon: <ShieldCheck size={20} color="#6b4a5f" />,
     stars: 5,
     title: "Cambio de vuelo",
@@ -35,8 +35,8 @@ const reviews = [
   },
   {
   name: "Carlos Gómez",
-  image:
-    "https://randomuser.me/api/portraits/men/71.jpg",
+  // image:
+  //   "https://randomuser.me/api/portraits/men/71.jpg",
   icon: <ShieldCheck size={20} color="#6b4a5f" />,
   stars: 5,
   title: "Estafa bancaria y Veraz",
@@ -53,8 +53,8 @@ const reviews = [
 },
 {
   name: "María López",
-  image:
-    "https://randomuser.me/api/portraits/women/14.jpg",
+  // image:
+  //   "https://randomuser.me/api/portraits/women/14.jpg",
   icon: <ShieldCheck size={20} color="#6b4a5f" />,
   stars: 5,
   title: "Demora en entrega de producto",
@@ -70,8 +70,8 @@ const reviews = [
 },
 {
   name: "Jorge Martínez",
-  image:
-    "https://randomuser.me/api/portraits/men/36.jpg",
+  // image:
+  //   "https://randomuser.me/api/portraits/men/36.jpg",
   icon: <ShieldCheck size={20} color="#6b4a5f" />,
   stars: 5,
   title: "Cobro indebido en tarjeta de crédito",

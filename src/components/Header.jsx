@@ -102,7 +102,7 @@ export default function HeaderForm() {
     </span>
   </p>
 
-  <div className="flex flex-wrap gap-6 text-white text-sm md:text-base font-medium">
+  <div className="flex flex-nowrap gap-3 text-white text-[13px] font-medium overflow-x-auto">
     <div className="flex items-center gap-2">
       <Scales size={20} weight="bold" className="text-orange-300" />
       <span>Experienca</span>

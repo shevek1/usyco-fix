@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import {
@@ -16,45 +17,14 @@ import "swiper/css/navigation";
 
 const reviews = [
   {
-    name: "Tomás Villagrán",
-    image: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=600", // ✅ Ruta a la imagen
-    icon: <ShieldCheck size={20} color="#6b4a5f" />,
-    stars: 5,
-    title: "Estafa bancaria y Veraz",
-    text:
-      "Tomás, uno de nuestros clientes, descubrió que había sido incluido en Veraz por una deuda originada en una tarjeta de crédito que jamás solicitó. El banco emitió el plástico sin su consentimiento y fue usado sin su conocimiento.",
-    resultPoints: [
-      "Que se anule la deuda ilegítima.",
-      "Que el banco emita libre deuda.",
-      "Que se ordene la baja inmediata en Veraz.",
-      "Que se le otorgue una reparación económica a favor del consumidor.",
-    ],
-    finalResult:
-      "Tomás no solo recuperó su tranquilidad, sino que además fue resarcido económicamente. Hoy su historial crediticio está limpio y validado.",
-  },
-  {
-    name: "Claudia Reynoso",
-    image: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=600",
-    icon: <AirplaneTilt size={20} color="#6b4a5f" />,
-    stars: 5,
-    title: "Cambio de vuelo sin aviso",
-    text:
-      "Claudia compró su pasaje con meses de anticipación para un congreso y la aerolínea modificó la fecha sin avisarle, impidiéndole llegar a tiempo.",
-    resultPoints: [
-      "La restitución total del importe del pasaje.",
-      "Una compensación económica por gastos perdidos y daños ocasionados.",
-    ],
-    finalResult:
-      "Claudia fue plenamente indemnizada y la empresa reconoció su responsabilidad. El caso sentó un precedente útil para otras personas.",
-  },
-  {
     name: "Facundo Pereyra",
-    image: "https://images.pexels.com/photos/832998/pexels-photo-832998.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image:
+      "https://images.pexels.com/photos/832998/pexels-photo-832998.jpeg?auto=compress&cs=tinysrgb&w=600",
     icon: <ShieldCheck size={20} color="#6b4a5f" />,
     stars: 5,
-    title: "Estafa bancaria y Veraz",
+    title: "Fraude bancario con tarjeta",
     text:
-      "Carlos fue incluido en Veraz por una deuda en una tarjeta que nunca solicitó. El banco emitió el plástico sin su consentimiento y lo usaron sin su conocimiento.",
+      "Facundo fue reportado en Veraz por una deuda generada con una tarjeta de crédito que jamás pidió. El banco la activó sin autorización y un tercero la utilizó sin su conocimiento.",
     resultPoints: [
       "Que se anule la deuda ilegítima.",
       "Que el banco emita libre deuda.",
@@ -64,23 +34,63 @@ const reviews = [
     finalResult:
       "Facundo recuperó su tranquilidad y fue resarcido económicamente. Hoy su historial crediticio está limpio y validado.",
   },
-  {
-    name: "Agostina Figueroa",
-    image: "https://static.vecteezy.com/system/resources/thumbnails/057/704/776/small/young-woman-with-glasses-smiles-confidently-during-classroom-session-photo.jpg",
+    {
+    name: "Facundo Pereyra",
+    image:
+      "https://images.pexels.com/photos/832998/pexels-photo-832998.jpeg?auto=compress&cs=tinysrgb&w=600",
     icon: <ShieldCheck size={20} color="#6b4a5f" />,
     stars: 5,
-    title: "Producto defectuoso y garantía incumplida",
+    title: "Fraude bancario con tarjeta",
     text:
-      "Agostina compró un electrodoméstico que se rompió a los pocos días. La tienda se negó a aceptar la garantía ni a cambiar el producto.",
+      "Facundo fue reportado en Veraz por una deuda generada con una tarjeta de crédito que jamás pidió. El banco la activó sin autorización y un tercero la utilizó sin su conocimiento.",
     resultPoints: [
-      "Reclamamos formalmente la garantía ante la empresa.",
-      "Exigimos el cambio inmediato del producto defectuoso.",
-      "Obtuvimos una compensación por los inconvenientes causados.",
+      "Que se anule la deuda ilegítima.",
+      "Que el banco emita libre deuda.",
+      "Que se ordene la baja inmediata en Veraz.",
+      "Que se le otorgue una reparación económica a favor del consumidor.",
     ],
     finalResult:
-      "Agostina recibió un electrodoméstico nuevo y una compensación. Se garantizó el cumplimiento de sus derechos como consumidora.",
+      "Facundo recuperó su tranquilidad y fue resarcido económicamente. Hoy su historial crediticio está limpio y validado.",
   },
+    {
+    name: "Facundo Pereyra",
+    image:
+      "https://images.pexels.com/photos/832998/pexels-photo-832998.jpeg?auto=compress&cs=tinysrgb&w=600",
+    icon: <ShieldCheck size={20} color="#6b4a5f" />,
+    stars: 5,
+    title: "Fraude bancario con tarjeta",
+    text:
+      "Facundo fue reportado en Veraz por una deuda generada con una tarjeta de crédito que jamás pidió. El banco la activó sin autorización y un tercero la utilizó sin su conocimiento.",
+    resultPoints: [
+      "Que se anule la deuda ilegítima.",
+      "Que el banco emita libre deuda.",
+      "Que se ordene la baja inmediata en Veraz.",
+      "Que se le otorgue una reparación económica a favor del consumidor.",
+    ],
+    finalResult:
+      "Facundo recuperó su tranquilidad y fue resarcido económicamente. Hoy su historial crediticio está limpio y validado.",
+  },
+    {
+    name: "Facundo Pereyra",
+    image:
+      "https://images.pexels.com/photos/832998/pexels-photo-832998.jpeg?auto=compress&cs=tinysrgb&w=600",
+    icon: <ShieldCheck size={20} color="#6b4a5f" />,
+    stars: 5,
+    title: "Fraude bancario con tarjeta",
+    text:
+      "Facundo fue reportado en Veraz por una deuda generada con una tarjeta de crédito que jamás pidió. El banco la activó sin autorización y un tercero la utilizó sin su conocimiento.",
+    resultPoints: [
+      "Que se anule la deuda ilegítima.",
+      "Que el banco emita libre deuda.",
+      "Que se ordene la baja inmediata en Veraz.",
+      "Que se le otorgue una reparación económica a favor del consumidor.",
+    ],
+    finalResult:
+      "Facundo recuperó su tranquilidad y fue resarcido económicamente. Hoy su historial crediticio está limpio y validado.",
+  },
+
 ];
+
 
 const steps = [
   {
@@ -110,66 +120,141 @@ const steps = [
 ];
 
 export default function HowWeWorkAndReviews() {
+  // refs para controlar navegación personalizada
+  const swiperRef = useRef(null);
+
   return (
     <div id="como-trabajamos" className="bg-[#fdfdfb] px-4">
-      <style>
-        {`
-          .swiper-button-next,
-          .swiper-button-prev {
-            width: 28px;
-            height: 28px;
-            color: #6b4a5f;
-            top: 45% !important;
-            z-index: 10;
+      <style>{`
+        /* Flechas arriba a la derecha, juntas y fuera de las cards */
+        .custom-navigation-wrapper {
+          display: flex;
+          justify-content: flex-end;
+          gap: 10px;
+          margin-bottom: 1rem;
+          position: relative;
+          top: 0;
+          right: 0;
+          max-width: 100%;
+          padding-right: 1rem;
+        }
+        .custom-swiper-button {
+          width: 32px;
+          height: 32px;
+          background: #6b4a5f;
+          color: white;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          user-select: none;
+          transition: background-color 0.3s ease;
+        }
+        .custom-swiper-button:hover {
+          background: #553a4a;
+        }
+
+        /* Cards */
+       .review-card {
+  background: white;
+  border: 1.5px solid #d2a547;
+  border-radius: 1rem;
+  box-shadow: 0 1px 6px rgb(0 0 0 / 0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+  min-height: 440px;  /* ✅ Forzá un alto fijo */
+}
+
+        /* Contenido con scroll si excede */
+        .review-content {
+          overflow-y: auto;
+          flex-grow: 1;
+          min-height: 0; /* importante para scroll en flex */
+        }
+
+        /* Textos y listas */
+        .review-text {
+          margin-bottom: 0.5rem;
+          line-height: 1.4;
+          font-size: 0.95rem;
+          color: #4a4a4a;
+        }
+        .result-points {
+          margin-bottom: 0.5rem;
+          padding-left: 1.25rem;
+          list-style: disc;
+          color: #4a4a4a;
+          font-size: 0.9rem;
+        }
+        .result-points li {
+          margin-bottom: 0.3rem;
+          display: flex;
+          align-items: center;
+        }
+        .result-points svg {
+          margin-right: 6px;
+          flex-shrink: 0;
+          color: #6b4a5f;
+        }
+        .final-result {
+          font-style: italic;
+          font-weight: 600;
+          color: #333333;
+          font-size: 0.9rem;
+          margin-top: 0.5rem;
+        }
+
+        /* Nombres y estrellas */
+        .review-header {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1rem;
+          gap: 0.75rem;
+        }
+        .review-header img {
+          width: 40px;
+          height: 40px;
+          border-radius: 9999px;
+          object-fit: cover;
+          border: 2px solid #6b4a5f;
+        }
+        .review-name {
+          font-weight: 600;
+          color: #6b4a5f;
+          font-size: 1rem;
+        }
+        .stars {
+          display: flex;
+          color: #facc15; /* amarillo */
+          margin-top: 2px;
+        }
+
+        /* Título */
+        .review-title {
+          font-weight: 700;
+          color: #6b4a5f;
+          font-size: 1.1rem;
+          margin-bottom: 0.5rem;
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 767px) {
+          .review-card {
+            max-height: none;
+            height: auto;
           }
-          .swiper-button-next::after,
-          .swiper-button-prev::after {
-            font-size: 28px;
-            font-weight: bold;
+          .review-content {
+            overflow-y: visible;
           }
-          .swiper-button-next {
-            right: -40px;
-          }
-          .swiper-button-prev {
-            left: -40px;
-          }
-          .fixed-height-card {
-            height: 360px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-          }
-          .review-text {
-            margin-bottom: 0.5rem;
-            line-height: 1.3;
-            font-size: 0.9rem;
-            color: #4a4a4a;
-          }
-          .result-points {
-            margin-bottom: 0.5rem;
-            padding-left: 0;
-            list-style: none;
-          }
-          .result-points li {
-            display: flex;
-            align-items: center;
-            margin-bottom: 0.3rem;
-            font-size: 0.9rem;
-            color: #4a4a4a;
-          }
-          .result-points svg {
-            margin-right: 6px;
-            flex-shrink: 0;
-            color: #6b4a5f;
-          }
-          .final-result {
-            font-style: italic;
-            font-weight: 500;
-            color: #333333;
-            font-size: 0.9rem;
-          }
-        `}
-      </style>
+        }
+      `}</style>
 
       {/* Cómo trabajamos */}
       <section className="max-w-6xl mx-auto py-20">
@@ -177,8 +262,9 @@ export default function HowWeWorkAndReviews() {
           ¿Cómo trabajamos?
         </h2>
         <p className="text-center text-[#6b4a5f] mb-12 max-w-2xl mx-auto text-lg">
-          Brindamos un asesoramiento <span className="underline ">claro y profesional</span> para defender tus derechos y
-          obtener los mejores resultados en cada caso.
+          Brindamos un asesoramiento{" "}
+          <span className="underline ">claro y profesional</span> para defender
+          tus derechos y obtener los mejores resultados en cada caso.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -199,70 +285,93 @@ export default function HowWeWorkAndReviews() {
         </div>
       </section>
 
-      {/* Separador */}
-      <div className="w-full flex justify-center">
+      {/* Reseñas */}
+      <section className="max-w-6xl mx-auto mb-24 relative">
+        <h2 className="text-4xl font-bold text-center text-[#6b4a5f] mb-6">
+          Casos de éxito
+        </h2>
+
+              <div className="w-full flex justify-center">
         <div className="h-[2px] w-20 bg-[#6b4a5f] mt-4 mb-16 rounded-full" />
       </div>
 
-      {/* Casos de Éxito */}
-      <section className="max-w-6xl mx-auto pb-20 relative">
-        <h2 className="text-4xl font-bold text-center text-[#6b4a5f] mb-2">
-          Casos de Éxito
-        </h2>
-        <p className="text-center text-[#6b4a5f] mb-12 max-w-3xl mx-auto text-lg">
-          Con experiencia y dedicación, logramos resolver situaciones complejas y
-          <span className="underline"> defender los derechos</span> de nuestros clientes.
-        </p>
+        {/* Flechas arriba a la derecha, fuera de las cards */}
+        <div className="custom-navigation-wrapper">
+          <div
+            className="custom-swiper-button"
+            onClick={() => swiperRef.current?.slidePrev()}
+            aria-label="Anterior"
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => (e.key === "Enter" ? swiperRef.current?.slidePrev() : null)}
+          >
+            &#8592;
+          </div>
+          <div
+            className="custom-swiper-button"
+            onClick={() => swiperRef.current?.slideNext()}
+            aria-label="Siguiente"
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => (e.key === "Enter" ? swiperRef.current?.slideNext() : null)}
+          >
+            &#8594;
+          </div>
+        </div>
 
         <Swiper
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
           modules={[Navigation, Autoplay]}
-          navigation
-          autoplay={{ delay: 6000 }}
-          spaceBetween={20}
-          loop
-          breakpoints={{
-            640: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
+          spaceBetween={30}
+          slidesPerView={1}
+          autoplay={{
+            delay: 7000,
+            disableOnInteraction: false,
           }}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+          navigation={false} // No queremos las flechas nativas, usamos las personalizadas arriba
         >
           {reviews.map((review, idx) => (
             <SwiperSlide key={idx}>
-              <div className="bg-white p-6 rounded-xl border border-[#d2a547] shadow-md fixed-height-card transition-all hover:shadow-lg">
-                <div className="flex items-center mb-3">
-                  <img
-                    src={review.image}
-                    alt={review.name}
-                    className="w-10 h-10 rounded-full mr-3 object-cover border border-[#6b4a5f]"
-                  />
+              <article className="review-card">
+                <header className="review-header">
+                  <img src={review.image} alt={`Foto de ${review.name}`} />
                   <div>
-                    <div className="flex items-center text-[#6b4a5f] font-semibold">
-                      <span>{review.name}</span>
-                    </div>
-                    <div className="flex text-yellow-500 mt-1">
+                    <p className="review-name">{review.name}</p>
+                    <div className="stars" aria-label={`${review.stars} estrellas`}>
                       {Array.from({ length: review.stars }).map((_, i) => (
-                        <Star key={i} weight="fill" size={16} />
+                        <Star key={i} size={18} weight="fill" />
                       ))}
                     </div>
                   </div>
+                  {/* <div className="ml-auto">{review.icon}</div> */}
+                </header>
+
+                <h3 className="review-title">{review.title}</h3>
+
+                <div className="review-content">
+                  <p className="review-text">{review.text}</p>
+                  <ul className="result-points">
+                    {review.resultPoints.map((point, i) => (
+                      <li key={i}>
+                        <CheckCircle size={16} weight="fill" />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="final-result">{review.finalResult}</p>
                 </div>
-
-                <h3 className="text-lg font-semibold text-[#6b4a5f] mb-2 flex items-center">
-                  {review.title}
-                </h3>
-
-                <p className="review-text">{review.text}</p>
-
-                <ul className="result-points">
-                  {review.resultPoints.map((point, i) => (
-                    <li key={i}>
-                      <CheckCircle size={16} weight="bold" color="#22c55e" />
-                      {point}
-                    </li>
-                  ))}
-                </ul>
-
-                <p className="final-result">"{review.finalResult}"</p>
-              </div>
+              </article>
             </SwiperSlide>
           ))}
         </Swiper>

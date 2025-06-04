@@ -24,33 +24,32 @@ const reviews = [
     stars: 5,
     title: "Fraude bancario con tarjeta",
     text:
-      "Facundo fue reportado en Veraz por una deuda generada con una tarjeta de crédito que jamás pidió. El banco la activó sin autorización y un tercero la utilizó sin su conocimiento.",
+      "Carlos apareció en Veraz por una deuda con tarjeta que nunca pidió. El banco emitió el plástico sin permiso y otro lo usó sin su conocimiento. Presentamos reclamos y acciones legales para defenderlo y limpiar su historial.",
     resultPoints: [
       "Que se anule la deuda ilegítima.",
       "Que el banco emita libre deuda.",
       "Que se ordene la baja inmediata en Veraz.",
-      "Que se le otorgue una reparación económica a favor del consumidor.",
+      "Que se le otorgue una reparación económica.",
     ],
     finalResult:
-      "Facundo recuperó su tranquilidad y fue resarcido económicamente. Hoy su historial crediticio está limpio y validado.",
+      "Carlos recuperó la tranquilidad y recibió una compensación económica.",
   },
     {
-    name: "Facundo Pereyra",
+    name: "Susana Martinez",
     image:
       "https://images.pexels.com/photos/832998/pexels-photo-832998.jpeg?auto=compress&cs=tinysrgb&w=600",
     icon: <ShieldCheck size={20} color="#6b4a5f" />,
     stars: 5,
     title: "Fraude bancario con tarjeta",
     text:
-      "Facundo fue reportado en Veraz por una deuda generada con una tarjeta de crédito que jamás pidió. El banco la activó sin autorización y un tercero la utilizó sin su conocimiento.",
+      "Lucía compró su pasaje con anticipación pero la aerolínea cambió la fecha sin aviso. No pudo hacer check-in y perdió el viaje. Presentamos reclamos y gestiones para exigir sus derechos y la devolución del dinero.",
     resultPoints: [
-      "Que se anule la deuda ilegítima.",
-      "Que el banco emita libre deuda.",
-      "Que se ordene la baja inmediata en Veraz.",
-      "Que se le otorgue una reparación económica a favor del consumidor.",
+      "La restitución total del importe del pasaje.",
+      "Una compensación por gastos y daños ocasionados.",
+       "Una compensación por gastos y daños ocasionados.",
     ],
     finalResult:
-      "Facundo recuperó su tranquilidad y fue resarcido económicamente. Hoy su historial crediticio está limpio y validado.",
+      "Lucía fue indemnizada y la empresa aceptó su responsabilidad. Este caso ayuda a proteger a quienes sufren cambios arbitrarios sin aviso.",
   },
     {
     name: "Facundo Pereyra",
@@ -183,22 +182,24 @@ export default function HowWeWorkAndReviews() {
           font-size: 0.95rem;
           color: #4a4a4a;
         }
-        .result-points {
-          margin-bottom: 0.5rem;
-          padding-left: 1.25rem;
-          list-style: disc;
-          color: #4a4a4a;
-          font-size: 0.9rem;
-        }
+       .result-points {
+  margin-bottom: 0.5rem;
+  padding-left: 0; /* sacá el padding para que no quede desplazado */
+  list-style: none; /* ocultá los bullets */
+  color: #4a4a4a;
+  font-size: 0.9rem;
+}
+
         .result-points li {
           margin-bottom: 0.3rem;
           display: flex;
           align-items: center;
+            justify-content: flex-start;
         }
         .result-points svg {
           margin-right: 6px;
           flex-shrink: 0;
-          color: #6b4a5f;
+          color:rgb(13, 238, 107);
         }
         .final-result {
           font-style: italic;

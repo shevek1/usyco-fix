@@ -4,8 +4,8 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@astrojs/react';
 
 export default defineConfig({
-  site:'https://shevek1.github.io',
-  base: '/usyco-fix',
+  output:'static',
+  base: '/',
 
   vite: {
     plugins: [tailwindcss()]

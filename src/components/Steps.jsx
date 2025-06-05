@@ -18,7 +18,7 @@ import "swiper/css/navigation";
 const reviews = [
   {
     name: "Julieta Ferreyra",
-    image: "/usyco-fix/assets/28.jpg",
+    image: "/assets/28.jpg",
     icon: <ShieldCheck size={20} color="#6b4a5f" />,
     stars: 5,
     title: "Cambio de vuelo",
@@ -37,7 +37,7 @@ const reviews = [
   },
   {
     name: "Claudio Moran",
-    image: "/usyco-fix/assets/76.jpg",
+    image: "/assets/76.jpg",
     icon: <ShieldCheck size={20} color="#6b4a5f" />,
     stars: 5,
     title: "Estafa bancaria y Veraz",
@@ -56,7 +56,7 @@ const reviews = [
   },
   {
     name: "Laura Rojas",
-    image: "/usyco-fix/assets/86.jpg",
+    image: "/assets/86.jpg",
     icon: <ShieldCheck size={20} color="#6b4a5f" />,
     stars: 5,
     title: "Demora en entrega de producto",
@@ -75,7 +75,7 @@ const reviews = [
   },
   {
     name: "Martin Ledesma",
-    image: "/usyco-fix/assets/57.jpg",
+    image: "/assets/57.jpg",
     icon: <ShieldCheck size={20} color="#6b4a5f" />,
     stars: 5,
     title: "Cobro indebido en tarjeta de crédito",

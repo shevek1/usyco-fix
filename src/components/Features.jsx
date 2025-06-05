@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import {
   Bank,
   CreditCard,
@@ -103,19 +104,29 @@ export default function Servicios() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8 md:gap-10 mt-18">
-        {servicios.map(({ icon, title, description }, idx) => (
-          <div key={idx} className="flex gap-4 items-start">
-            <span className="text-orange-500 bg-orange-300/20 p-3 rounded-full inline-flex items-center justify-center shadow-sm">
-              {icon}
-            </span>
-            <div>
-              <h3 className="font-semibold text-lg text-slate-800">{title}</h3>
-              <p className="mt-1 text-gray-500">{description}</p>
-            </div>
-          </div>
-        ))}
+<div className="grid md:grid-cols-2 gap-8 md:gap-10 mt-18">
+  {servicios.map(({ icon, title, description }, idx) => (
+    <motion.div
+      key={idx}
+      className="flex gap-4 items-start"
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: 0.6,
+        delay: idx * 0.15, // retrasa cada ítem para crear el efecto en cascada
+        ease: "easeOut",
+      }}
+    >
+      <span className="text-orange-500 bg-orange-300/20 p-3 rounded-full inline-flex items-center justify-center shadow-sm">
+        {icon}
+      </span>
+      <div>
+        <h3 className="font-semibold text-lg text-slate-800">{title}</h3>
+        <p className="mt-1 text-gray-500">{description}</p>
       </div>
+    </motion.div>
+  ))}
+</div>
 
     
     </div>

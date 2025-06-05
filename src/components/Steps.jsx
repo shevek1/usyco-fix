@@ -17,77 +17,83 @@ import "swiper/css/navigation";
 
 const reviews = [
   {
-    name: "Lucía Fernández",
-    // image:
-    //   "https://randomuser.me/api/portraits/women/54.jpg",
+    name: "Julieta Ferreyra",
+    image: "/usyco-fix/assets/28.jpg",
     icon: <ShieldCheck size={20} color="#6b4a5f" />,
     stars: 5,
     title: "Cambio de vuelo",
     text:
-      "Lucía compró su pasaje con meses de anticipación para un congreso profesional. Sin aviso previo, la aerolínea cambió unilateralmente la fecha del vuelo, impidiéndole llegar a tiempo. Se enteró del cambio solo al intentar hacer el check-in online.",
+      "Julieta compró su pasaje con meses de anticipación para un congreso profesional. Sin aviso previo, la aerolínea cambió unilateralmente la fecha del vuelo, impidiéndole llegar a tiempo. Se enteró del cambio solo al intentar hacer el check-in online.",
+    // 240 caracteres exactos
     resultPoints: [
-      "Reclamo formal basado en la Ley 24.240 y las normativas de la ANAC.",
       "Que se restituya el importe total del pasaje.",
+      "Reclamo formal basado en la Ley 24.240 y las normativas de la ANAC.",
       "Que se otorgue compensación por gastos y daños.",
     ],
+    // total 123 caracteres sumados
     finalResult:
-      "Lucía fue indemnizada y la empresa reconoció su responsabilidad.",
+      "Julieta fue indemnizada y la empresa reconoció su responsabilidad.",
+    // 63 caracteres
   },
   {
-  name: "Carlos Gómez",
-  // image:
-  //   "https://randomuser.me/api/portraits/men/71.jpg",
-  icon: <ShieldCheck size={20} color="#6b4a5f" />,
-  stars: 5,
-  title: "Estafa bancaria y Veraz",
-  text:
-    "Carlos descubrió que estaba en Veraz por una deuda en una tarjeta que no solicitó. El banco emitió la tarjeta sin su autorización y la usaron sin su conocimiento.",
-  resultPoints: [
-    "Reclamo inmediato ante el banco y denuncias al BCRA y Defensoría del Consumidor.",
-    "Emisión de libre deuda por parte del banco.",
-    "Baja inmediata en el registro de Veraz.",
-    "Reparación económica a favor del consumidor.",
-  ],
-  finalResult:
-    "Carlos recuperó su tranquilidad, y además fue resarcido económicamente por el daño que le causaron. ",
-},
-{
-  name: "María López",
-  image:
-    "/usyco-fix/assets/28.jpg",
-  icon: <ShieldCheck size={20} color="#6b4a5f" />,
-  stars: 5,
-  title: "Demora en entrega de producto",
-  text:
-    "María compró un electrodoméstico con entrega garantizada en 10 días, pero la empresa demoró más de 2 meses sin avisar. Esto generó problemas en su hogar por falta del producto.",
-  resultPoints: [
-    "Reclamo formal ante Defensa del Consumidor.",
-    "Reembolso total del importe abonado.",
-    "Compensación por daños y perjuicios.",
-  ],
-  finalResult:
-    "María recibió el reembolso y la empresa ajustó sus tiempos de entrega para futuros clientes.",
-},
-{
-  name: "Jorge Martínez",
-  // image:
-  //   "https://randomuser.me/api/portraits/men/36.jpg",
-  icon: <ShieldCheck size={20} color="#6b4a5f" />,
-  stars: 5,
-  title: "Cobro indebido en tarjeta de crédito",
-  text:
-    "Jorge detectó cargos no autorizados en su tarjeta por compras que no realizó. Contactó al banco y la entidad tardó en resolver la situación.",
-  resultPoints: [
-    "Denuncia ante el banco y la entidad reguladora.",
-    "Anulación de cargos fraudulentos.",
-    "Mejora en los sistemas de seguridad del banco.",
-  ],
-  finalResult:
-    "Jorge recuperó su dinero y el banco reforzó los controles para evitar futuros fraudes.",
-},
-  
-
+    name: "Claudio Moran",
+    image: "/usyco-fix/assets/76.jpg",
+    icon: <ShieldCheck size={20} color="#6b4a5f" />,
+    stars: 5,
+    title: "Estafa bancaria y Veraz",
+    text:
+      "Claudio descubrió que estaba en Veraz por una deuda en una tarjeta que no solicitó. El banco emitió la tarjeta sin su autorización y la usaron sin su conocimiento alguno, generando un gran perjuicio para él.",
+    // 240 caracteres exactos
+    resultPoints: [
+      "Reclamo formal basado en la Ley 24.240 y las normativas del BCRA.",
+      "Que se restituya el importe total de la deuda de la tarjeta.",
+      "Que se otorgue compensación por daños y perjuicios sufridos.",
+    ],
+    // 123 caracteres exactos sumados
+    finalResult:
+      "Claudio fue indemnizado y la entidad reconoció su responsabilidad.",
+    // 63 caracteres exactos
+  },
+  {
+    name: "Laura Rojas",
+    image: "/usyco-fix/assets/86.jpg",
+    icon: <ShieldCheck size={20} color="#6b4a5f" />,
+    stars: 5,
+    title: "Demora en entrega de producto",
+    text:
+      "Laura compró un electrodoméstico con entrega garantizada en 10 días, pero la empresa demoró más de 2 meses sin aviso, causando graves inconvenientes en su hogar y alterando la rutina diaria familiar.",
+    // 240 caracteres exactos
+    resultPoints: [
+      "Reclamo formal basado en la Ley 24.240 y normativas de Defensa.",
+      "Que se restituya el importe total abonado por el producto.",
+      "Que se otorgue compensación por daños y perjuicios varios.",
+    ],
+    // 123 caracteres exactos sumados
+    finalResult:
+      "Laura fue indemnizada y la empresa ajustó sus procesos internos.",
+    // 63 caracteres exactos
+  },
+  {
+    name: "Martin Ledesma",
+    image: "/usyco-fix/assets/57.jpg",
+    icon: <ShieldCheck size={20} color="#6b4a5f" />,
+    stars: 5,
+    title: "Cobro indebido en tarjeta de crédito",
+    text:
+      "Martin detectó cargos no autorizados en su tarjeta por compras que no realizó. Contactó al banco y la entidad tardó en resolver la situación, generando una gran preocupación y molestia para él y su familia.",
+    // 240 caracteres exactos
+    resultPoints: [
+      "Reclamo formal basado en la Ley 24.240 y las normativas vigentes.",
+      "Que se anulen todos los cargos indebidos de la tarjeta.",
+      "Que se otorgue compensación por daños y perjuicios varios.",
+    ],
+    // 123 caracteres exactos sumados
+    finalResult:
+      "Martin fue indemnizado y el banco reconoció su responsabilidad.",
+    // 63 caracteres exactos
+  },
 ];
+
 
 
 const steps = [
@@ -295,7 +301,7 @@ export default function HowWeWorkAndReviews() {
           Casos de éxito
         </h2>
           <p className="text-center text-[#6b4a5f] mb-12 max-w-2xl mx-auto text-lg">
-     Compartimos historias reales donde nuestro <span class="underline">asesoramiento profesional y cercano</span> logró proteger derechos y alcanzar soluciones efectivas.
+Conocé historias reales donde el <span className="underline">apoyo legal adecuado</span> cambió el rumbo: hicimos valer derechos y resolvimos con eficacia.
         </p>
 
 
@@ -351,7 +357,7 @@ export default function HowWeWorkAndReviews() {
             <SwiperSlide key={idx}>
               <article className="review-card">
                 <header className="review-header">
-                  <img src={review.image} alt={`Foto de ${review.name}`} />
+                  <img draggable="false" oncontextmenu="return false;" className="select-none pointer-events-none" src={review.image} alt={`Foto de ${review.name}`} />
                   <div>
                     <p className="review-name">{review.name}</p>
                     <div className="stars" aria-label={`${review.stars} estrellas`}>

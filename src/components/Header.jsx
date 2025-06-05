@@ -89,16 +89,26 @@ export default function HeaderForm() {
         "0 0 3px rgba(113, 113, 113, 0.8), 0 0 5px rgba(109, 106, 106, 0.6), 0 0 7px rgba(168, 163, 163, 0.4)",
     }}
   >
-    Recuperamos <span className="underline text-[#d2a547]">lo que te corresponde</span> con firmeza y resultados.{" "}
+    Reclamá <span className=""
+    
+      style={{
+        color: "white",
+        fontWeight: "bold",
+        textShadow:
+         "0 0 2px rgba(218, 126, 14, 0.8), 0 0 12px rgba(139, 137, 137, 0.96)",
+      }}
+    >
+   <span className="text-orange-300 ">tus derechos</span>
+    </span>. Te acompañamos con{" "}
     <span className=""
       style={{
         color: "white",
         fontWeight: "bold",
         textShadow:
-          "0 0 6px rgba(208, 203, 203, 0.8), 0 0 12px rgba(14, 13, 13, 0.96)",
+          "0 0 2px rgba(218, 126, 14, 0.8), 0 0 12px rgba(139, 137, 137, 0.96)",
       }}
     >
-      Sabemos defenderte en serio.
+      <span className="text-orange-300">compromiso y experiencia legal comprobada</span>
     </span>
   </p>
 
@@ -123,7 +133,7 @@ export default function HeaderForm() {
               <div className="overflow-hidden rounded-xl border-t-4 border-[#d2a547] bg-white p-7 shadow-2xl shadow-[#d2a547] sm:p-8">
                 <h3 className="flex items-center text-xl font-bold text-emerald-900 gap-2">
   <ChatCenteredDots size={20} />
-  Deja tu consulta
+  <span className="text-[#5a4754]">Deja tu consulta</span>
 </h3>
                 <h2 className="mb-4 text-base text-emerald-900 sm:mb-6">
                   Completá el formulario y nos comunicaremos a la brevedad
@@ -181,7 +191,7 @@ export default function HeaderForm() {
 <option value="">Selecciona el Asunto</option>
 <option value="estafa">Estafa bancaria</option>
 <option value="credito">Crédito no solicitado</option>
-<option value="veraz">Veraz indebido</option>
+<option value="veraz">Inclusión en Veraz</option>
 <option value="producto">Producto o servicio fallado</option>
 <option value="prepaga">Cobros indebidos (prepaga)</option>
 <option value="aerolinea">Reclamo a aerolínea</option>

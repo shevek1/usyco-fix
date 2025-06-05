@@ -53,8 +53,8 @@ const reviews = [
 },
 {
   name: "María López",
-  image:
-    "/usyco-fix/assets/28.jpg",
+  // image:
+  //   "https://randomuser.me/api/portraits/women/14.jpg",
   icon: <ShieldCheck size={20} color="#6b4a5f" />,
   stars: 5,
   title: "Demora en entrega de producto",
@@ -295,7 +295,7 @@ export default function HowWeWorkAndReviews() {
           Casos de éxito
         </h2>
           <p className="text-center text-[#6b4a5f] mb-12 max-w-2xl mx-auto text-lg">
-     Compartimos historias reales donde nuestro <span class="underline">asesoramiento profesional y cercano</span> logró proteger derechos y alcanzar soluciones efectivas.
+     Compartimos historias reales donde nuestro <span className="underline">asesoramiento profesional y cercano</span> logró proteger derechos y alcanzar soluciones efectivas.
         </p>
 
 

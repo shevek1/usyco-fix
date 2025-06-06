@@ -91,44 +91,43 @@ export default function Servicios() {
   ];
 
   return (
-    <div id="servicios"className="max-w-4xl mx-auto px-5 mt-16 mb-16">
+    <div id="servicios" className="max-w-4xl mx-auto px-5 mt-16 mb-16">
       <div className="text-center">
-  <div className="flex items-center justify-center mb-2 space-x-2">
-  {/* <Scales size={32} className="text-[#6b4a5f]" /> */}
-  <h2 className="text-4xl font-bold text-[#6b4a5f] text-center">
-    Nuestros servicios
-  </h2>
-</div>
+        <div className="flex items-center justify-center mb-2 space-x-2">
+          {/* <Scales size={32} className="text-[#6b4a5f]" /> */}
+          <h2 className="text-4xl font-bold text-[#6b4a5f] text-center">
+            Nuestros servicios
+          </h2>
+        </div>
         <p className="max-w-md mx-auto mt-2 text-gray-500">
           Asesoría legal especializada en defensa al consumidor para <span className="underline">defender tus derechos</span> de forma efectiva.
         </p>
       </div>
 
-<div className="grid md:grid-cols-2 gap-8 md:gap-10 mt-18">
-  {servicios.map(({ icon, title, description }, idx) => (
-    <motion.div
-      key={idx}
-      className="flex gap-4 items-start"
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{
-        duration: 0.6,
-        delay: idx * 0.15, // retrasa cada ítem para crear el efecto en cascada
-        ease: "easeOut",
-      }}
-    >
-      <span className="text-orange-500 bg-orange-300/20 p-3 rounded-full inline-flex items-center justify-center shadow-sm">
-        {icon}
-      </span>
-      <div>
-        <h3 className="font-semibold text-lg text-slate-800">{title}</h3>
-        <p className="mt-1 text-gray-500">{description}</p>
+      <div className="grid md:grid-cols-2 gap-8 md:gap-10 mt-18">
+        {servicios.map(({ icon, title, description }, idx) => (
+          <motion.div
+            key={idx}
+            className="flex gap-4 items-start"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{
+              duration: 0.3,
+              delay: idx * 0.15,
+              ease: "easeOut",
+            }}
+          >
+            <span className="text-orange-500 bg-orange-300/20 p-3 rounded-full inline-flex items-center justify-center shadow-sm">
+              {icon}
+            </span>
+            <div>
+              <h3 className="font-semibold text-lg text-slate-800">{title}</h3>
+              <p className="mt-1 text-gray-500">{description}</p>
+            </div>
+          </motion.div>
+        ))}
       </div>
-    </motion.div>
-  ))}
-</div>
-
-    
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
@@ -126,6 +127,8 @@ const steps = [
 export default function HowWeWorkAndReviews() {
   // refs para controlar navegación personalizada
   const swiperRef = useRef(null);
+    const ref = useRef(null);
+   const isInView = useInView(ref, { once: false }); // `once: false` para que pase cada vez que aparezca
 
   return (
     <div id="como-trabajamos" className="bg-[#fdfdfb] px-4">
@@ -271,9 +274,21 @@ export default function HowWeWorkAndReviews() {
           <span className="underline ">claro y profesional</span> para defender
           tus derechos y obtener los mejores resultados en cada caso.
         </p>
-
+   
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, idx) => (
+              <motion.div
+      key={idx}
+      ref={ref}
+      className="flex gap-4 items-start"
+      initial={{ opacity: 0, y: -20 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
+      transition={{
+        duration: 0.6,
+        delay: idx * 0.15,
+        ease: "easeOut",
+      }}
+    >
             <div
               key={idx}
               className="p-5 duration-300 transform bg-white border border-[#d2a547] rounded shadow-sm hover:-translate-y-2 transition"
@@ -286,8 +301,12 @@ export default function HowWeWorkAndReviews() {
               </div>
               <p className="text-sm text-gray-700">{step.description}</p>
             </div>
+             </motion.div>
           ))}
+         
         </div>
+
+
       </section>
 
                <div className="w-full flex justify-center">

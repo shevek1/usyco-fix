@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { motion } from "framer-motion";
 import {
   Bank,
@@ -8,77 +9,88 @@ import {
   Airplane,
 } from "phosphor-react";
 
+// Íconos con estilo coherente
+const IconWrapper = memo(({ children }) => (
+  <span
+    className="text-orange-500 bg-orange-300/20 p-3 rounded-full inline-flex items-center justify-center shadow-sm"
+    aria-hidden="true"
+  >
+    {children}
+  </span>
+));
+
 export default function Servicios() {
   const servicios = [
     {
       icon: <Bank size={24} weight="regular" />,
-      title: "Estafa bancaria o débito no autorizado",
+      title: "Débitos o transferencias no autorizadas",
       description: (
         <>
-          ¿Te descontaron plata sin permiso?{" "}
+          Detectamos movimientos bancarios desconocidos y{" "}
           <span className="font-bold text-slate-600">
-            Reclamamos débitos y transferencias no autorizadas.
+            gestionamos su reversión inmediata.
           </span>
         </>
       ),
     },
     {
       icon: <CreditCard size={24} weight="regular" />,
-      title: "Créditos o productos no solicitados",
+      title: "Créditos y productos financieros no solicitados",
       description: (
         <>
-          ¿Te activaron un servicio sin pedirlo?{" "}
+          Intervenimos en casos donde se asignaron servicios sin consentimiento y{" "}
           <span className="font-bold text-slate-600">
-            Te ayudamos a anularlo y recuperar tu dinero.
+            exigimos la cancelación y el reembolso correspondiente.
           </span>
         </>
       ),
     },
     {
       icon: <FileText size={24} weight="regular" />,
-      title: "Inclusión indebida en Veraz u otros registros",
+      title: "Inclusión errónea en Veraz u otros registros",
       description: (
         <>
-          ¿Te metieron en el Veraz por error?{" "}
+          Si fuiste reportado injustamente,{" "}
           <span className="font-bold text-slate-600">
-            Gestionamos tu salida y cuidamos tu historial crediticio.
+            iniciamos el reclamo para limpiar tu historial crediticio.
           </span>
         </>
       ),
     },
     {
       icon: <Wrench size={24} weight="regular" />,
-      title: "Producto o servicio defectuoso",
+      title: "Producto defectuoso o servicio mal prestado",
       description: (
         <>
-          ¿Te falló lo que compraste?{" "}
+          Reclamamos ante fallas en productos o servicios para{" "}
           <span className="font-bold text-slate-600">
-            Exigimos reparación, cambio o reembolso.
+            garantizar reparación, reemplazo o reembolso.
           </span>
         </>
       ),
     },
     {
       icon: <Money size={24} weight="regular" />,
-      title: "Cobros indebidos de prepagas",
+      title: "Facturación indebida en prepagas u obras sociales",
       description: (
         <>
-          ¿La prepaga te facturó mal?{" "}
+          Asistimos frente a cobros excesivos o sin respaldo legal{" "}
           <span className="font-bold text-slate-600">
-            Reclamamos cargos no autorizados o excesivos.
+            y solicitamos devolución de importes mal cobrados.
           </span>
         </>
       ),
     },
     {
       icon: <Airplane size={24} weight="regular" />,
-      title: "Reclamos contra aerolíneas",
+      title: "Incumplimientos por parte de aerolíneas",
       description: (
         <>
-          ¿Problemas con tu vuelo?{" "}
+          Iniciamos gestiones por{" "}
           <span className="font-bold text-slate-600">
-            Pedimos compensación por retrasos, cancelaciones o equipaje perdido.
-          </span>
+            demoras, cancelaciones o pérdida de equipaje
+          </span>{" "}
+          para asegurar tu compensación.
         </>
       ),
     },
@@ -91,20 +103,18 @@ export default function Servicios() {
       className="max-w-4xl mx-auto px-5 mt-16 mb-16"
     >
       <div className="text-center">
-        <div className="flex items-center justify-center mb-2 space-x-2">
-          <h2
-            id="servicios-heading"
-            className="text-4xl font-bold text-[#6b4a5f] text-center"
-          >
-            Nuestros servicios
-          </h2>
-        </div>
+        <h2
+          id="servicios-heading"
+          className="text-4xl font-bold text-[#6b4a5f]"
+        >
+          Nuestros servicios
+        </h2>
         <p className="max-w-md mx-auto mt-2 text-gray-500">
-          Asesoría legal especializada en defensa al consumidor para{" "}
+          Asesoría legal especializada en{" "}
           <span className="underline decoration-[#d2a547] underline-offset-4 font-medium">
-            hacer valer tus derechos
+            defensa al consumidor
           </span>{" "}
-          de forma efectiva.
+          frente a conflictos comerciales y financieros.
         </p>
       </div>
 
@@ -117,21 +127,17 @@ export default function Servicios() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{
-              duration: 0.3,
-              delay: idx * 0.15,
+              duration: 0.4,
+              delay: idx * 0.12,
               ease: "easeOut",
             }}
           >
-            <span
-              className="text-orange-500 bg-orange-300/20 p-3 rounded-full inline-flex items-center justify-center shadow-sm"
-              aria-hidden="true"
-              title={title}
-            >
-              {icon}
-            </span>
+            <IconWrapper>{icon}</IconWrapper>
             <div>
-              <h3 className="font-semibold text-lg text-slate-800">{title}</h3>
-              <p className="mt-1 text-gray-500">{description}</p>
+              <h3 className="font-semibold text-lg text-slate-800">
+                {title}
+              </h3>
+              <p className="mt-1 text-gray-600">{description}</p>
             </div>
           </motion.div>
         ))}

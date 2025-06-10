@@ -101,7 +101,7 @@ export default function ContactForm() {
       href="https://www.instagram.com/tu-cuenta"
       target="_blank"
       rel="noopener noreferrer"
-      className="text-pink-500"
+      className="text-purple-400"
     >
       <InstagramLogo size={20} weight="fill" />
     </a>

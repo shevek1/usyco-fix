@@ -271,7 +271,7 @@ export default function HowWeWorkAndReviews() {
         </h2>
         <p className="text-center text-[#6b4a5f] mb-12 max-w-2xl mx-auto text-lg">
           Brindamos un asesoramiento{" "}
-          <span className="underline ">claro y profesional</span> para defender
+          <span className="underline decoration-[#d2a547] underline-offset-4 ">claro y profesional</span> para defender
           tus derechos y obtener los mejores resultados en cada caso.
         </p>
    
@@ -320,7 +320,7 @@ export default function HowWeWorkAndReviews() {
           Casos de éxito
         </h2>
           <p className="text-center text-[#6b4a5f] mb-12 max-w-2xl mx-auto text-lg">
-Conocé historias reales donde el <span className="underline">apoyo legal adecuado</span> cambió el rumbo: hicimos valer derechos y resolvimos con eficacia.
+Conocé historias reales donde el <span className="underline decoration-[#d2a547] underline-offset-4">apoyo legal adecuado</span> cambió el rumbo: hicimos valer derechos y resolvimos con eficacia.
         </p>
 
 

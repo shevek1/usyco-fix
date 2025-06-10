@@ -46,7 +46,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="p-4 mt-10 mb-10">
+    <div id="contacto" className="p-4 mt-10 mb-10">
       <div className="grid lg:grid-cols-2 items-start gap-12 p-8 mx-auto max-w-4xl max-lg:max-w-2xl bg-purple-100 shadow-md rounded-md">
         {/* Info */}
         <div>

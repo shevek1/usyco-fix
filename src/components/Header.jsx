@@ -49,11 +49,11 @@ export default function HeaderForm() {
   };
 
   return (
-    <div className="relative">
+    <div className="relative isolate">
       <img
         width="600"
         height="600"
-        src="https://i.postimg.cc/NM6c17sp/bg-uyc-5.png"
+        src="/assets/bg-uyc.webp"
         alt="Abogados y Clientes"
         className="absolute inset-0 w-full h-full object-cover"
       />
@@ -70,7 +70,7 @@ export default function HeaderForm() {
         <div className="relative mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20">
           <div className="flex flex-col items-center justify-between xl:flex-row">
    <div className="mb-12 w-full max-w-xl xl:mb-0 xl:w-7/12 xl:pr-16">
-  <h2
+  <h1
     className="mb-6 max-w-lg camelcase font-formal text-3xl font-bold tracking-tight text-white sm:text-7xl sm:leading-none mt-5 md:mt-0 animate-fade-in"
     style={{
       color: "#ffffff",
@@ -79,7 +79,7 @@ export default function HeaderForm() {
     }}
   >
     Usuarios y Consumidores
-  </h2>
+  </h1>
 
   <p
     className="mb-6 max-w-xl text-base md:text-lg font-formal"
@@ -114,15 +114,15 @@ export default function HeaderForm() {
 
   <div className="flex flex-nowrap gap-3 text-white text-[13px] font-medium overflow-x-auto">
     <div className="flex items-center gap-2">
-      <Scales size={20} weight="bold" className="text-orange-300" />
-      <span>Experienca</span>
+      <Scales size={20} weight="bold" className="text-orange-300" aria-label="Experiencia"/>
+      <span>Experiencia</span>
     </div>
     <div className="flex items-center gap-2">
-      <Handshake size={20} weight="bold" className="text-orange-300" />
+      <Handshake size={20} weight="bold" className="text-orange-300" aria-label="Compromiso"/>
       <span>Compromiso</span>
     </div>
     <div className="flex items-center gap-2">
-      <Trophy size={20} weight="bold" className="text-orange-300" />
+      <Trophy size={20} weight="bold" className="text-orange-300" aria-label="Resultados"/>
       <span>Resultados</span>
     </div>
   </div>
@@ -220,12 +220,12 @@ export default function HeaderForm() {
     <div className="mt-3 mb-[-20px] flex justify-center items-center gap-6">
                     <img
                       src="https://i.ibb.co/MynSgJ6z/abogadoscap.png"
-                      alt="Colegio de Abogados 1"
+                     alt="Matrícula del Colegio de Abogados Capital"
                       className="h-8 w-auto object-contain"
                     />
                     <img
                       src="https://i.ibb.co/tT0dyr6C/abogasquil.png"
-                      alt="Colegio de Abogados 2"
+                      alt="Matrícula Colegio de Abogados de Quilmes"
                       className="h-8 w-auto object-contain"
                     />
                   </div>

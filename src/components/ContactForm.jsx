@@ -50,7 +50,7 @@ export default function ContactForm() {
       <div className="grid lg:grid-cols-2 items-start gap-12 p-8 mx-auto max-w-4xl max-lg:max-w-2xl bg-purple-100 shadow-md rounded-md">
         {/* Info */}
         <div>
-          <h2 className="text-slate-900 text-3xl font-bold">¿Te quedó alguna duda?</h2>
+          <h2 className="text-[#6b4a5f] text-3xl font-bold">¿Te quedó alguna duda?</h2>
           <p className="text-[15px] text-slate-600 mt-4 leading-relaxed">
        <strong>Te ayudamos a hacer valer tus derechos.</strong> <span className='underline decoration-[#d2a547] underline-offset-4'>Completá el formulario</span> y un abogado de nuestro equip te va a contactar a la brevedad.
 

@@ -53,11 +53,23 @@ export default function ContactForm() {
           <h2 className="text-[#6b4a5f] text-3xl font-bold">¿Te quedó alguna duda?</h2>
           <p className="text-[15px] text-slate-600 mt-4 leading-relaxed">
        <strong>Te ayudamos a hacer valer tus derechos.</strong> <span className='underline decoration-[#d2a547] underline-offset-4'>Completá el formulario</span> y un abogado de nuestro equip te va a contactar a la brevedad.
-
+  <div className="mt-2 flex justify-start gap-3">
+                    <img
+                      src="/assets/abogados-cap.webp"
+                     alt="Matrícula del Colegio de Abogados Capital"
+                      className="h-8 w-auto object-contain select-none pointer-events-none"
+                    />
+                    <img
+                      src="/assets/abogados-quil.webp"
+                      alt="Matrícula Colegio de Abogados de Quilmes"
+                      className="h-8 w-auto object-contain select-none pointer-events-none"
+                    />
+                  </div>
           </p>
 
           <div className="mt-12">
-            <h2 className="text-slate-900 text-base font-semibold">Email</h2>
+            
+            <h2 className="text-[#6b4a5f] text-base font-semibold">Email</h2>
             <ul className="mt-4">
               <li className="flex items-center">
                 <div className="bg-gray-200 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
@@ -85,7 +97,7 @@ export default function ContactForm() {
           </div>
 
           <div className="mt-12">
-            <h2 className="text-slate-900 text-base font-semibold">Redes Sociales</h2>
+            <h2 className="text-[#6b4a5f] text-base font-semibold">Redes Sociales</h2>
 <ul className="flex mt-4 space-x-4">
   <li className="bg-purple-200 hover:bg-blue-200 transition-colors h-10 w-10 rounded-full flex items-center justify-center shrink-0">
     <a
@@ -184,11 +196,12 @@ export default function ContactForm() {
 
   <button
     type="submit"
-    className="inline-flex cursor-pointer h-10 w-full items-center justify-center gap-2 rounded-xl bg-[#d2a547] px-6 font-semibold tracking-wide text-white shadow-md ring-[#d2a547] transition duration-200 hover:bg-[#b8973f] focus:outline-none focus:ring"
+    className="inline-flex items-center justify-center gap-2 w-full h-10 bg-[#d2a547] hover:bg-[#c9a045] text-white font-semibold px-6 py-3 md:px-10 rounded-2xl transition duration-300 shadow-md ring-[#d2a547] focus:outline-none focus:ring cursor-pointer"
   >
     <EnvelopeSimple size={16} weight="regular" />
     Iniciar Reclamo Ahora
   </button>
+
 </form>
 
       </div>

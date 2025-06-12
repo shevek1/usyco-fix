@@ -19,7 +19,7 @@ import "swiper/css/navigation";
 const reviews = [
   {
     name: "Julieta Ferreyra",
-    image: "/assets/28.jpg",
+    image: "/assets/28.webp",
     icon: <ShieldCheck size={20} color="#6b4a5f" />,
     stars: 5,
     title: "Cambio de vuelo",
@@ -38,7 +38,7 @@ const reviews = [
   },
   {
     name: "Claudio Moran",
-    image: "/assets/76.jpg",
+    image: "/assets/76.webp",
     icon: <ShieldCheck size={20} color="#6b4a5f" />,
     stars: 5,
     title: "Estafa bancaria y Veraz",
@@ -57,7 +57,7 @@ const reviews = [
   },
   {
     name: "Laura Rojas",
-    image: "/assets/86.jpg",
+    image: "/assets/86.webp",
     icon: <ShieldCheck size={20} color="#6b4a5f" />,
     stars: 5,
     title: "Demora en entrega de producto",
@@ -76,7 +76,7 @@ const reviews = [
   },
   {
     name: "Martin Ledesma",
-    image: "/assets/57.jpg",
+    image: "/assets/57.webp",
     icon: <ShieldCheck size={20} color="#6b4a5f" />,
     stars: 5,
     title: "Cobro indebido en tarjeta de crédito",

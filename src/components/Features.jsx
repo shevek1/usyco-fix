@@ -111,7 +111,7 @@ export default function Servicios() {
         </h2>
         <p className="max-w-md mx-auto mt-2 text-gray-500">
           Asesoría legal especializada en{" "}
-          <span className="underline decoration-[#d2a547] underline-offset-4 font-medium">
+          <span className="underline decoration-[#d2a547] underline-offset-4 font-medium text-[#6b4a5f]">
             defensa al consumidor
           </span>{" "}
           frente a conflictos comerciales y financieros.
@@ -134,7 +134,7 @@ export default function Servicios() {
           >
             <IconWrapper>{icon}</IconWrapper>
             <div>
-              <h3 className="font-semibold text-lg text-slate-800">
+              <h3 className="font-semibold text-lg text-[#6b4a5f]">
                 {title}
               </h3>
               <p className="mt-1 text-gray-600">{description}</p>

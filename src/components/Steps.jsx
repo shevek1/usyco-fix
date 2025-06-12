@@ -128,7 +128,7 @@ export default function HowWeWorkAndReviews() {
   // refs para controlar navegación personalizada
   const swiperRef = useRef(null);
     const ref = useRef(null);
-   const isInView = useInView(ref, { once: false }); // `once: false` para que pase cada vez que aparezca
+   const isInView = useInView(ref, { once: true }); // `once: false` para que pase cada vez que aparezca
 
   return (
     <div id="como-trabajamos" className="bg-[#fdfdfb] px-4">
@@ -282,6 +282,7 @@ export default function HowWeWorkAndReviews() {
       ref={ref}
       className="flex gap-4 items-start"
       initial={{ opacity: 0, y: -20 }}
+      viewport={{ once: true }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
       transition={{
         duration: 0.6,

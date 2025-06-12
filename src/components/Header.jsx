@@ -136,7 +136,7 @@ export default function HeaderForm() {
   <span className="text-[#5a4754]">Deja tu consulta</span>
 </h3>
                 <h2 className="mb-4 text-base text-emerald-900 sm:mb-6">
-                  Completá el formulario y nos comunicaremos a la brevedad
+                    Completá el formulario y hacemos valer tus derechos ya.
                 </h2>
 
                 <form ref={form} onSubmit={sendEmail}>

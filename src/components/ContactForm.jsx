@@ -52,7 +52,8 @@ export default function ContactForm() {
         <div>
           <h2 className="text-slate-900 text-3xl font-bold">¿Te quedó alguna duda?</h2>
           <p className="text-[15px] text-slate-600 mt-4 leading-relaxed">
-         <strong>Sabemos defenderte.</strong> Completá el formulario y uno de nuestros abogados se va a contactar con vos a la brevedad.
+       <strong>Te ayudamos a hacer valer tus derechos.</strong> <span className='underline decoration-[#d2a547] underline-offset-4'>Completá el formulario</span> y un abogado de nuestro equip te va a contactar a la brevedad.
+
           </p>
 
           <div className="mt-12">
@@ -65,7 +66,7 @@ export default function ContactForm() {
                   </svg>
                 </div>
                 <div className="ml-4 text-sm">
-                  <small className="block text-slate-900">Mail</small>
+                  <small className="block text-slate-900">Correo electronico</small>
 <a
   href="mailto:contacto@usuariosyconsumidores.com.ar"
   title="contacto@usuariosyconsumidores.com.ar"
@@ -96,7 +97,7 @@ export default function ContactForm() {
       <FacebookLogo size={20} weight="fill" />
     </a>
   </li>
-  <li className="bg-purple-200 hover:bg-orange-200 transition-colors h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+  <li className="bg-purple-200 hover:bg-pink-200 transition-colors h-10 w-10 rounded-full flex items-center justify-center shrink-0">
     <a
       href="https://www.instagram.com/tu-cuenta"
       target="_blank"

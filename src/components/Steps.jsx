@@ -377,7 +377,7 @@ Conocé historias reales donde el <span className="underline decoration-[#d2a547
             <SwiperSlide key={idx}>
               <article className="review-card">
                 <header className="review-header">
-                  <img draggable="false" oncontextmenu="return false;" className="select-none pointer-events-none" src={review.image} alt={`Foto de ${review.name}`} />
+                  <img draggable="false" onContextMenu={(e) => e.preventDefault()} className="select-none pointer-events-none" src={review.image} alt={`Foto de ${review.name}`} />
                   <div>
                     <p className="review-name">{review.name}</p>
                     <div className="stars" aria-label={`${review.stars} estrellas`}>

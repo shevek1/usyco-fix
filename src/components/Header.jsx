@@ -30,7 +30,7 @@ export default function HeaderForm() {
         }).then((result) => {
           if (result.isConfirmed) {
             window.open(
-              "https://wa.me/5491136596539?text=Hola%2C+los+contacto+desde+su+p%C3%A1gina+web.+Me+gustar%C3%ADa+hacer+una+consulta.",
+              "https://wa.me/5491166410915?text=Hola%2C+los+contacto+desde+su+p%C3%A1gina+web.+Me+gustar%C3%ADa+hacer+una+consulta.",
               "_blank"
             );
           }

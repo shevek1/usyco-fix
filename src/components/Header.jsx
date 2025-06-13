@@ -58,7 +58,7 @@ export default function HeaderForm() {
   height="1080"
   decoding="async"
   loading="eager"
-  className="absolute inset-0 w-full h-full object-cover"
+  className="absolute inset-0 w-full h-full object-cover" 
 />
       <div className="relative bg-opacity-1">
         <svg
@@ -129,13 +129,14 @@ export default function HeaderForm() {
 
 
             <div className="w-full max-w-xl xl:w-5/12 xl:px-8">
-              <div className="overflow-hidden rounded-xl border-t-4 border-[#d2a547] bg-white p-7 shadow-2xl shadow-[#d2a547] sm:p-8">
+<div className="overflow-hidden rounded-xl border-t-4 border-[#d2a547] bg-white p-7 shadow-2xl shadow-[#d2a547] sm:p-8 min-w-[320px] sm:min-w-[400px]">
+
                 <h3 className="flex items-center text-xl font-bold text-emerald-900 gap-2">
   <ChatCenteredDots size={20} />
   <span className="text-[#5a4754]">Deja tu consulta</span>
 </h3>
                 <h2 className="mb-4 text-base text-emerald-900 sm:mb-6">
-                    Completá el formulario y hacemos valer tus derechos ya.
+                    Completá el formulario, haremos valer tus derechos.
                 </h2>
 
                 <form ref={form} onSubmit={sendEmail} aria-label="Formulario de consulta legal">
@@ -217,7 +218,28 @@ export default function HeaderForm() {
   <EnvelopeSimple size={16} weight="bold" />
   Iniciar Reclamo Ahora
 </button>
-    <div className="mt-3 mb-[-20px] flex justify-center items-center gap-6">
+<div className="mt-4 flex items-center justify-center gap-2 text-sm text-gray-600">
+    <input
+      type="checkbox"
+      required
+      id="tyc"
+      name="tyc"
+      className="accent-[#d2a547] w-4 h-4"
+    />
+    <label htmlFor="tyc">
+      Acepto los{" "}
+      <a
+        href="/terminos-y-condiciones"
+        rel="noopener noreferrer"
+        className="underline text-[#d2a547] hover:text-[#b8973f]"
+      >
+        términos y condiciones
+      </a>
+    </label>
+  </div>
+
+
+    <div className="mt-3 flex justify-center items-center gap-6">
                  <img
   src="/assets/abogados-cap.webp"
   alt="Matrícula del Colegio de Abogados Capital"

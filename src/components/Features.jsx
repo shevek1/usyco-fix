@@ -110,9 +110,9 @@ export default function Servicios() {
           Nuestros servicios
         </h2>
         <p className="max-w-md mx-auto mt-2 text-gray-500">
-          Asesoría legal especializada en{" "}
+          Asesoría legal especializada en la{" "}
           <span className="underline decoration-[#d2a547] underline-offset-4 font-medium text-[#6b4a5f]">
-            defensa al consumidor
+            defensa de usuarios y consumidores
           </span>{" "}
           frente a conflictos comerciales y financieros.
         </p>

@@ -52,7 +52,7 @@ export default function ContactForm() {
         <div>
           <h2 className="text-[#6b4a5f] text-3xl font-bold">¿Te quedó alguna duda?</h2>
           <p className="text-[15px] text-slate-600 mt-4 leading-relaxed">
-       <strong>Te ayudamos a hacer valer tus derechos.</strong> <span className='underline decoration-[#d2a547] underline-offset-4'>Completá el formulario</span> y un abogado de nuestro equip te va a contactar a la brevedad.
+       <strong>Te ayudamos a hacer valer tus derechos.</strong> <span className='underline decoration-[#d2a547] underline-offset-4'>Completá el formulario</span> y un abogado de nuestro equipo te va a contactar a la brevedad.
   <div className="mt-2 flex justify-start gap-3">
                     <img
                       src="/assets/abogados-cap.webp"
@@ -201,6 +201,26 @@ export default function ContactForm() {
     <EnvelopeSimple size={16} weight="regular" />
     Iniciar Reclamo Ahora
   </button>
+  <div className=" flex items-center justify-center gap-2 text-sm text-gray-600">
+    <input
+      type="checkbox"
+      required
+      id="tyc"
+      name="tyc"
+      className="accent-[#d2a547] w-4 h-4"
+    />
+    <label htmlFor="tyc">
+      Acepto los{" "}
+      <a
+        href="/terminos-y-condiciones"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline text-[#d2a547] hover:text-[#b8973f]"
+      >
+        términos y condiciones
+      </a>
+    </label>
+  </div>
 
 </form>
 

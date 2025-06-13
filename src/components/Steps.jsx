@@ -27,13 +27,13 @@ const reviews = [
       "Julieta compró su pasaje con meses de anticipación para un congreso profesional. Sin aviso previo, la aerolínea cambió unilateralmente la fecha del vuelo, impidiéndole llegar a tiempo. Se enteró del cambio solo al intentar hacer el check-in online.",
     // 240 caracteres exactos
     resultPoints: [
-      "Que se restituya el importe total del pasaje.",
-      "Reclamo formal basado en la Ley 24.240 y las normativas de la ANAC.",
-      "Que se otorgue compensación por gastos y daños.",
+      "Exigimos el reintegro del importe total del pasaje.",
+     
+      "Logramos una compensación por gastos y daños.",
     ],
     // total 123 caracteres sumados
     finalResult:
-      "Julieta fue indemnizada y la empresa reconoció su responsabilidad.",
+       "\"Julieta fue indemnizada y la empresa reconoció su responsabilidad.\"",
     // 63 caracteres
   },
   {
@@ -46,13 +46,13 @@ const reviews = [
       "Claudio descubrió que estaba en Veraz por una deuda en una tarjeta que no solicitó. El banco emitió la tarjeta sin su autorización y la usaron sin su conocimiento alguno, generando un gran perjuicio para él.",
     // 240 caracteres exactos
     resultPoints: [
-      "Reclamo formal basado en la Ley 24.240 y las normativas del BCRA.",
-      "Que se restituya el importe total de la deuda de la tarjeta.",
-      "Que se otorgue compensación por daños y perjuicios sufridos.",
+      "Exigimos la rectificación de la información en base de datos",
+      "Además, que le otorguen certificado de libre deuda.",
+      "Logramos una compensación por gastos y daños.",
     ],
     // 123 caracteres exactos sumados
     finalResult:
-      "Claudio fue indemnizado y la entidad reconoció su responsabilidad.",
+      "\"Claudio fue indemnizado y la entidad reconoció su responsabilidad.\"",
     // 63 caracteres exactos
   },
   {
@@ -65,13 +65,12 @@ const reviews = [
       "Laura compró un electrodoméstico con entrega garantizada en 10 días, pero la empresa demoró más de 2 meses sin aviso, causando graves inconvenientes en su hogar y alterando la rutina diaria familiar.",
     // 240 caracteres exactos
     resultPoints: [
-      "Reclamo formal basado en la Ley 24.240 y normativas de Defensa.",
-      "Que se restituya el importe total abonado por el producto.",
-      "Que se otorgue compensación por daños y perjuicios varios.",
+      "Exigimos el reintegro de importe total abonado por el producto.",
+      "Además, logramos una compensación por gastos y daños",
     ],
     // 123 caracteres exactos sumados
     finalResult:
-      "Laura fue indemnizada y la empresa ajustó sus procesos internos.",
+      "\"Laura fue indemnizada y la empresa ajustó sus procesos internos.\"",
     // 63 caracteres exactos
   },
   {
@@ -84,13 +83,12 @@ const reviews = [
       "Martin detectó cargos no autorizados en su tarjeta por compras que no realizó. Contactó al banco y la entidad tardó en resolver la situación, generando una gran preocupación y molestia para él y su familia.",
     // 240 caracteres exactos
     resultPoints: [
-      "Reclamo formal basado en la Ley 24.240 y las normativas vigentes.",
-      "Que se anulen todos los cargos indebidos de la tarjeta.",
-      "Que se otorgue compensación por daños y perjuicios varios.",
+      "Exigimos la anulación de los cobros indebidos.",
+      "Además, logramos una compensación por gastos y daños.",
     ],
     // 123 caracteres exactos sumados
     finalResult:
-      "Martin fue indemnizado y el banco reconoció su responsabilidad.",
+      "\"Martin fue indemnizado y el banco reconoció su responsabilidad.\"",
     // 63 caracteres exactos
   },
 ];
@@ -321,7 +319,7 @@ export default function HowWeWorkAndReviews() {
           Casos de éxito
         </h2>
           <p className="text-center text-[#6b4a5f] mb-12 max-w-2xl mx-auto text-lg">
-Conocé historias reales donde el <span className="underline decoration-[#d2a547] underline-offset-4">apoyo legal adecuado</span> cambió el rumbo: hicimos valer derechos y resolvimos con eficacia.
+Conocé historias reales donde nuestro <span className="underline decoration-[#d2a547] underline-offset-4">apoyo legal</span> hizo la diferencia.
         </p>
 
 

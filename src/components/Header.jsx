@@ -189,16 +189,16 @@ export default function HeaderForm() {
                     className="h-12 w-full mb-4 rounded border border-gray-300 bg-white px-4 shadow-sm ring-[#d2a547] focus:border-[#d2a547] focus:outline-none focus:ring"
                   >
 <option value="">Selecciona el Asunto</option>
-<option value="estafa">Estafa bancaria</option>
-<option value="credito">Crédito no solicitado</option>
-<option value="veraz">Inclusión en Veraz</option>
-<option value="producto">Producto o servicio fallado</option>
-<option value="prepaga">Cobros indebidos (prepaga)</option>
-<option value="aerolinea">Reclamo a aerolínea</option>
-<option value="contrato">Incumplimiento contractual</option>
-<option value="consulta">Consulta general</option>
-<option value="seguimiento">Seguimiento de caso</option>
-<option value="otros">Otros..</option>
+<option value="Estafa bancaria">Estafa bancaria</option>
+<option value="Credito no solicitado">Crédito no solicitado</option>
+<option value="Inclusion en Veraz">Inclusión en Veraz</option>
+<option value="Producto / servicio fallado">Producto o servicio fallado</option>
+<option value="Cobro indebido prepaga">Cobros indebidos (prepaga)</option>
+<option value="Reclamo aerolinea">Reclamo a aerolínea</option>
+<option value="Incumplimiento contractual">Incumplimiento contractual</option>
+<option value="Consulta general">Consulta general</option>
+<option value="Seguimiento de caso">Seguimiento de caso</option>
+<option value="Otros">Otros..</option>
 
                   </select>
 
